@@ -1,10 +1,7 @@
-<<<<<<< HEAD
 #100 Days of Code - Python lit code
 # Day 1
 
 
-=======
->>>>>>> 444ca17fa61ee9055b620ffb0a0b516672a72de9
 #1. Are You Playing Banjo?
 
 # def are_you_playing_banjo(name):
@@ -38,8 +35,6 @@
 
 # print(open_or_senior(users))
 
-<<<<<<< HEAD
-
 
 #3. Lasagna Oven
 # EXPECTED_BAKE_TIME = 40
@@ -63,13 +58,3 @@
 #     """
 #     return preparation_time_in_minutes(number_of_layers) + elapsed_bake_time
 
-
-
-
-=======
-EXPECTED_BAKE_TIME = 40
-def bake_time_remaining(elapsed_bake_time):
-    return EXPECTED_BAKE_TIME - elapsed_bake_time
-
-print(bake_time_remaining(40))
->>>>>>> 444ca17fa61ee9055b620ffb0a0b516672a72de9
