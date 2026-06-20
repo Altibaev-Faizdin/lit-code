@@ -58,3 +58,54 @@
 #     """
 #     return preparation_time_in_minutes(number_of_layers) + elapsed_bake_time
 
+
+
+
+
+#4. Reverse Words
+
+# def reverse_words(text):
+#     return ' '.join(word[::-1] for word in text.split(' '))
+
+# print(reverse_words("This is an example!"))
+# print(reverse_words("double  spaces"))
+
+
+
+#5. Sentence Smash
+# def smash(words):   
+#     return ' '.join(words)
+
+# print(smash(["hello", "world", "this", "is", "test"]))
+# print(smash(["hello"]))
+# print(smash([]))
+
+
+
+#6.
+
+def eat_ghost(power_pellet_active, touching_ghost):
+    if power_pellet_active and touching_ghost:
+        return True
+    else:
+        return False
+
+def score(touching_power_pellet, touching_dot):
+    if touching_power_pellet or touching_dot:
+        return True
+    else:
+        return False
+
+def lose(power_pellet_active, touching_ghost):     
+    if not power_pellet_active and touching_ghost:
+        return True
+    else:
+        return False
+
+def win(has_eaten_all_dots, power_pellet_active, touching_ghost):
+    if has_eaten_all_dots and  touching_ghost:
+        return True
+    else:
+        return False
+
+print(eat_ghost(True, True))
