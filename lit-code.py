@@ -82,30 +82,61 @@
 
 
 
-#6.
+#6. Pac-Man Game
 
-def eat_ghost(power_pellet_active, touching_ghost):
-    if power_pellet_active and touching_ghost:
-        return True
-    else:
-        return False
+# def eat_ghost(power_pellet_active, touching_ghost):
+#     if power_pellet_active and touching_ghost:
+#         return True
+#     else:
+#         return False
 
-def score(touching_power_pellet, touching_dot):
-    if touching_power_pellet or touching_dot:
-        return True
-    else:
-        return False
+# def score(touching_power_pellet, touching_dot):
+#     if touching_power_pellet or touching_dot:
+#         return True
+#     else:
+#         return False
 
-def lose(power_pellet_active, touching_ghost):     
-    if not power_pellet_active and touching_ghost:
-        return True
-    else:
-        return False
+# def lose(power_pellet_active, touching_ghost):     
+#     if not power_pellet_active and touching_ghost:
+#         return True
+#     else:
+#         return False
 
-def win(has_eaten_all_dots, power_pellet_active, touching_ghost):
-    if has_eaten_all_dots and  touching_ghost:
-        return True
-    else:
-        return False
+# def win(has_eaten_all_dots, power_pellet_active, touching_ghost):
+#     if has_eaten_all_dots and  touching_ghost:
+#         return True
+#     else:
+#         return False
 
-print(eat_ghost(True, True))
+# print(eat_ghost(True, True))
+
+
+
+
+
+#7. Counting Sheeps
+
+# def count_sheeps(sheep): 
+#     return sheep.count(True)
+
+# print(count_sheeps([True, True, True, False,
+#                     True, True, True, True,
+#                     True, False, True, False,
+#                     True, False, False, True,
+#                     True, True, True, True,
+#                     False, False, True, True]))
+
+
+#8
+
+def xo(s):
+    return s.lower().count('x') == s.lower().count('o')
+
+print(xo("xo"))
+print(xo("xo0"))
+print(xo("xxxoo"))
+print(xo("xxo"))
+print(xo("ooxx"))
+print(xo("ooxXm"))
+print(xo("zpzpzpp"))
+print(xo("zzoo"))
