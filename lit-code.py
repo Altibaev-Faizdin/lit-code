@@ -127,16 +127,53 @@
 #                     False, False, True, True]))
 
 
-#8
+#8. XO
 
-def xo(s):
-    return s.lower().count('x') == s.lower().count('o')
+# def xo(s):
+#     return s.lower().count('x') == s.lower().count('o')
 
-print(xo("xo"))
-print(xo("xo0"))
-print(xo("xxxoo"))
-print(xo("xxo"))
-print(xo("ooxx"))
-print(xo("ooxXm"))
-print(xo("zpzpzpp"))
-print(xo("zzoo"))
+# print(xo("xo"))
+# print(xo("xo0"))
+# print(xo("xxxoo"))
+# print(xo("xxo"))
+# print(xo("ooxx"))
+# print(xo("ooxXm"))
+# print(xo("zpzpzpp"))
+# print(xo("zzoo"))
+
+
+
+#9. Basic-Operator
+
+# def basic_op(operator, value1, value2):
+#     if operator == '+':
+#         return value1 + value2
+#     elif operator == '-':
+#         return value1 - value2
+#     elif operator == '*':
+#         return value1 * value2
+#     elif operator == '/':
+#         return value1 / value2
+#     else:
+#         return "Invalid operator"
+
+# print(basic_op('+', 4, 7))
+# print(basic_op('-', 15, 18))
+# print(basic_op('*', 5, 5))
+# print(basic_op('/', 49, 7))
+
+
+
+
+#10
+
+def disemvowel(string):
+    vowels = "aeiouAEIOU"
+    result = ""
+
+    for char in string:
+        if char not in vowels:
+            result += char
+
+    return result
+print(disemvowel("This website is for losers LOL!"))
