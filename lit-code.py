@@ -165,15 +165,47 @@
 
 
 
-#10
+#10 Disemvowel
 
-def disemvowel(string):
-    vowels = "aeiouAEIOU"
+# def disemvowel(string):
+#     vowels = "aeiouAEIOU"
+#     result = ""
+
+#     for char in string:
+#         if char not in vowels:
+#             result += char
+
+#     return result
+# print(disemvowel("This website is for losers LOL!"))
+
+
+
+
+
+#11 Even or Old
+
+# def even_or_old(number):
+#     if number % 2 == 0:
+#         return "Even"
+#     else:
+#         return "Old"
+
+# print(even_or_old(2))   
+# print(even_or_old(7))   
+# print(even_or_old(10))  
+# print(even_or_old(15))  
+
+
+
+#12 
+def square_digits(num):
     result = ""
 
-    for char in string:
-        if char not in vowels:
-            result += char
+    for digit in str(num):
+        result += str(int(digit) ** 2)
 
-    return result
-print(disemvowel("This website is for losers LOL!"))
+    return int(result)
+
+square_digits(9119)  
+square_digits(765)   
+square_digits(0)     
