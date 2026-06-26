@@ -197,15 +197,49 @@
 
 
 
-#12 
-def square_digits(num):
-    result = ""
+#12. Square 
 
-    for digit in str(num):
-        result += str(int(digit) ** 2)
+# def square_digits(num):
+#     result = ""
 
-    return int(result)
+#     for digit in str(num):
+#         result += str(int(digit) ** 2)
 
-square_digits(9119)  
-square_digits(765)   
-square_digits(0)     
+#     return int(result)
+
+# square_digits(9119)  
+# square_digits(765)   
+# square_digits(0)     
+
+
+
+
+#13. Jaden Case
+
+#def to_jaden_case(string):
+#    words = string.split()
+    
+#    result = []
+
+#    for word in words:
+#        result.append(word.capitalize())
+
+#    return " ".join(result)
+
+#print(to_jaden_case("hello world"))
+#print(to_jaden_case("most trees are blue"))
+#print(to_jaden_case("aren't you serious"))
+
+
+
+#14. 
+def make_negative(num):
+    if num > 0:
+        return -num
+    return num
+
+
+print(make_negative(1))    
+print(make_negative(-5))   
+print(make_negative(0))    
+print(make_negative(42))   
