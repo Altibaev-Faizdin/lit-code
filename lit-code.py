@@ -232,14 +232,33 @@
 
 
 
-#14. 
-def make_negative(num):
-    if num > 0:
-        return -num
-    return num
+#14. Make Negative 
+
+#def make_negative(num):
+#    if num > 0:
+#        return -num
+#    return num
 
 
-print(make_negative(1))    
-print(make_negative(-5))   
-print(make_negative(0))    
-print(make_negative(42))   
+#print(make_negative(1))    
+#print(make_negative(-5))   
+#print(make_negative(0))    
+#print(make_negative(42))   
+
+
+
+
+#15
+
+def find_smallest_int(arr):
+    smallest = arr[0]
+
+    for num in arr:
+        if num < smallest:
+            smallest = num
+    
+    return smallest
+
+
+print(find_smallest_int([34, 15, 88, 2]))
+print(find_smallest_int([34, -345, -1, 100]))
