@@ -248,17 +248,42 @@
 
 
 
-#15
+#15. Find Smallest
 
-def find_smallest_int(arr):
-    smallest = arr[0]
+# def find_smallest_int(arr):
+#     smallest = arr[0]
 
-    for num in arr:
-        if num < smallest:
-            smallest = num
+#     for num in arr:
+#         if num < smallest:
+#             smallest = num
     
-    return smallest
+#     return smallest
 
 
-print(find_smallest_int([34, 15, 88, 2]))
-print(find_smallest_int([34, -345, -1, 100]))
+# print(find_smallest_int([34, 15, 88, 2]))
+# print(find_smallest_int([34, -345, -1, 100]))
+
+
+#16. Row Odd
+
+# def row_sum_odd_numbers(n):
+#     return n ** 3 
+
+# print(row_sum_odd_numbers(1))  
+# print(row_sum_odd_numbers(2))  
+# print(row_sum_odd_numbers(3))  
+# print(row_sum_odd_numbers(4))  
+# print(row_sum_odd_numbers(5))  
+
+
+
+
+
+
+#17
+def no_space(x):
+    return x.replace("", "")
+
+print(no_space("Hello World"))
+print(no_space("a b c d"))
+print(no_space("8aaaaa dddd r     "))
