@@ -280,10 +280,41 @@
 
 
 
-#17
-def no_space(x):
-    return x.replace("", "")
+#17. No space
 
-print(no_space("Hello World"))
-print(no_space("a b c d"))
-print(no_space("8aaaaa dddd r     "))
+#def no_space(x):
+#    return x.replace(" ", "")
+
+
+
+
+#18. String to Number
+
+#def string_to_number(s):
+#    return int(s)
+#print(string_to_number("1234"))
+#
+#print(string_to_number("605"))
+#
+#print(string_to_number("-7"))
+
+
+
+#19. Friend Name
+
+# def friend(names):
+#     result = []
+
+#     for name in names:
+#         if len(name) == 4:
+#             result.append(name)
+
+#     return result
+
+
+#20.
+def find_needle(haystack):
+    index = haystack.index("needle")
+    return "found the needle at position " + str(index)
+
+print(find_needle(["hay", "junk", "hay", "hay", "moreJunk", "needle", "randomJunk"]))
