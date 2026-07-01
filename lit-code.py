@@ -313,8 +313,42 @@
 
 
 #20.
-def find_needle(haystack):
-    index = haystack.index("needle")
-    return "found the needle at position " + str(index)
+# def find_needle(haystack):
+#     index = haystack.index("needle")
+#     return "found the needle at position " + str(index)
 
-print(find_needle(["hay", "junk", "hay", "hay", "moreJunk", "needle", "randomJunk"]))
+# print(find_needle(["hay", "junk", "hay", "hay", "moreJunk", "needle", "randomJunk"]))
+
+
+
+#21. Find the next perfect square
+
+# def find_next_square(sq):
+#     root = int(sq ** 0.5)
+
+#     if root * root != sq:
+#         return -1
+
+#     return (root + 1) ** 2
+
+# print(find_next_square(121))
+# print(find_next_square(625))
+# print(find_next_square(114))
+
+
+
+
+#22. Population Growth
+
+# def nb_year(p0, percent, aug, p):
+#     years = 0
+#     while p0 < p:
+#         p0 = int(p0 + p0 * percent / 100 + aug)
+#         years += 1
+#     return years
+
+# print(nb_year(1500, 5, 100, 5000))
+# print(nb_year(1500000, 2.5, 10000, 2000000))
+# print(nb_year(1500000, 0.25, 1000, 2000000))
+# print(nb_year(1500000, 0.25, 1000, 2000000))
+# print(nb_year(1500000, 0.25, 1000, 2000000))
