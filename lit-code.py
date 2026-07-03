@@ -352,3 +352,13 @@
 # print(nb_year(1500000, 0.25, 1000, 2000000))
 # print(nb_year(1500000, 0.25, 1000, 2000000))
 # print(nb_year(1500000, 0.25, 1000, 2000000))
+
+
+
+#23
+
+def printer_error(s):
+    return f"{s.count('a')}/{len(s)}"
+
+print(printer_error("aaabbbbhaijjjm"))
+print(printer_error("aaaxbbbbyyhwawiwjjjwwm"))
