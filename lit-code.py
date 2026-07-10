@@ -355,10 +355,54 @@
 
 
 
-#23
+#23. Printer Errors
 
-def printer_error(s):
-    return f"{s.count('a')}/{len(s)}"
+# def printer_error(s):
+#     errors = 0
 
-print(printer_error("aaabbbbhaijjjm"))
-print(printer_error("aaaxbbbbyyhwawiwjjjwwm"))
+#     for char in s:
+#         if char > 'm':
+#             errors += 1
+
+#     return f"{errors}/{len(s)}"
+
+# print(printer_error("aaabbbbhaijjjm"))
+# print(printer_error("aaaxbbbbyyhwawiwjjjwwm"))
+
+
+
+#24. Repeat String
+
+# def repeat_str(repeat, string):
+#     return string * repeat
+
+# print(repeat_str(4, "a"))
+# print(repeat_str(3, "hello "))
+# print(repeat_str(2, "abc"))
+
+
+#25. Two to One
+
+# def longest(a1, a2):
+#     return ''.join(sorted(set(a1 + a2)))
+
+# print(longest("aretheyhere", "yestheyarehere"))
+# print(longest("loopingisfunbutdangerous", "lessdangerousthancoding"))
+# print(longest("inmanylanguages", "theresapairoffunctions"))
+
+
+#26.
+
+def remove_exclamation_marks(s):
+    return s.replace("!", "")
+
+print(remove_exclamation_marks("Hello World!"))
+print(remove_exclamation_marks("Hello World!!!"))
+print(remove_exclamation_marks("Hello World!!!!!"))
+print(remove_exclamation_marks("Hello World!!!!!!!!!"))
+print(remove_exclamation_marks("Hello World!!!!!!!!!!!!"))
+print(remove_exclamation_marks("Hello World!!!!!!!!!!!!!!!!!"))
+print(remove_exclamation_marks("Hello World!!!!!!!!!!!!!!!!!!!"))
+print(remove_exclamation_marks("Hello World!!!!!!!!!!!!!!!!!!!!!"))
+print(remove_exclamation_marks("Hello World!!!!!!!!!!!!!!!!!!!!!!!"))
+print(remove_exclamation_marks("Hello World!!!!!!!!!!!!!!!!!!!!!!!!!"))
