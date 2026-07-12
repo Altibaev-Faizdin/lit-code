@@ -391,18 +391,39 @@
 # print(longest("inmanylanguages", "theresapairoffunctions"))
 
 
-#26.
+#26. Remove exclamation
 
-def remove_exclamation_marks(s):
-    return s.replace("!", "")
+# def remove_exclamation_marks(s):
+#     return s.replace("!", "")
 
-print(remove_exclamation_marks("Hello World!"))
-print(remove_exclamation_marks("Hello World!!!"))
-print(remove_exclamation_marks("Hello World!!!!!"))
-print(remove_exclamation_marks("Hello World!!!!!!!!!"))
-print(remove_exclamation_marks("Hello World!!!!!!!!!!!!"))
-print(remove_exclamation_marks("Hello World!!!!!!!!!!!!!!!!!"))
-print(remove_exclamation_marks("Hello World!!!!!!!!!!!!!!!!!!!"))
-print(remove_exclamation_marks("Hello World!!!!!!!!!!!!!!!!!!!!!"))
-print(remove_exclamation_marks("Hello World!!!!!!!!!!!!!!!!!!!!!!!"))
-print(remove_exclamation_marks("Hello World!!!!!!!!!!!!!!!!!!!!!!!!!"))
+# print(remove_exclamation_marks("Hello World!"))
+# print(remove_exclamation_marks("Hello World!!!"))
+# print(remove_exclamation_marks("Hello World!!!!!"))
+# print(remove_exclamation_marks("Hello World!!!!!!!!!"))
+# print(remove_exclamation_marks("Hello World!!!!!!!!!!!!"))
+# print(remove_exclamation_marks("Hello World!!!!!!!!!!!!!!!!!"))
+# print(remove_exclamation_marks("Hello World!!!!!!!!!!!!!!!!!!!"))
+# print(remove_exclamation_marks("Hello World!!!!!!!!!!!!!!!!!!!!!"))
+# print(remove_exclamation_marks("Hello World!!!!!!!!!!!!!!!!!!!!!!!"))
+# print(remove_exclamation_marks("Hello World!!!!!!!!!!!!!!!!!!!!!!!!!"))
+
+
+#30. Get Volume of Cuboid
+
+# def get_volume_of_cuboid(length, width, height):
+#     return length * width * height
+
+# print(get_volume_of_cuboid(1, 2, 2))
+# print(get_volume_of_cuboid(6.3, 2, 5))
+
+
+#31. Simple Multiplication
+
+# def simple_multiplication(number):
+#     if number % 2 == 0:
+#         return number * 8
+#     else:
+#         return number * 9
+
+# print(simple_multiplication(2))
+# print(simple_multiplication(3))
