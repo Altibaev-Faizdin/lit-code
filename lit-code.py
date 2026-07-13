@@ -427,3 +427,25 @@
 
 # print(simple_multiplication(2))
 # print(simple_multiplication(3))
+
+
+
+#31. Odd or Even
+
+# def odd_or_even(arr):
+#     if sum(arr) % 2 == 0:
+#         return "even"
+#     else:
+#         return "odd"
+
+# print(odd_or_even([0, 1, 2]))
+# print(odd_or_even([0, 1, 3]))
+
+
+#32. String ends with
+
+# def solution(text, ending):
+#     return text.endswith(ending)
+
+# print(solution("abc", "bc"))
+# print(solution("abc", "d"))
