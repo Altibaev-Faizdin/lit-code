@@ -312,12 +312,17 @@
 #     return result
 
 
+
+
+
 #20.
 # def find_needle(haystack):
 #     index = haystack.index("needle")
 #     return "found the needle at position " + str(index)
 
 # print(find_needle(["hay", "junk", "hay", "hay", "moreJunk", "needle", "randomJunk"]))
+
+
 
 
 
@@ -334,6 +339,9 @@
 # print(find_next_square(121))
 # print(find_next_square(625))
 # print(find_next_square(114))
+
+
+
 
 
 
@@ -355,6 +363,9 @@
 
 
 
+
+
+
 #23. Printer Errors
 
 # def printer_error(s):
@@ -371,6 +382,10 @@
 
 
 
+
+
+
+
 #24. Repeat String
 
 # def repeat_str(repeat, string):
@@ -381,6 +396,9 @@
 # print(repeat_str(2, "abc"))
 
 
+
+
+
 #25. Two to One
 
 # def longest(a1, a2):
@@ -389,6 +407,11 @@
 # print(longest("aretheyhere", "yestheyarehere"))
 # print(longest("loopingisfunbutdangerous", "lessdangerousthancoding"))
 # print(longest("inmanylanguages", "theresapairoffunctions"))
+
+
+
+
+
 
 
 #26. Remove exclamation
@@ -408,6 +431,9 @@
 # print(remove_exclamation_marks("Hello World!!!!!!!!!!!!!!!!!!!!!!!!!"))
 
 
+
+
+
 #30. Get Volume of Cuboid
 
 # def get_volume_of_cuboid(length, width, height):
@@ -415,6 +441,10 @@
 
 # print(get_volume_of_cuboid(1, 2, 2))
 # print(get_volume_of_cuboid(6.3, 2, 5))
+
+
+
+
 
 
 #31. Simple Multiplication
@@ -430,6 +460,9 @@
 
 
 
+
+
+
 #31. Odd or Even
 
 # def odd_or_even(arr):
@@ -442,6 +475,9 @@
 # print(odd_or_even([0, 1, 3]))
 
 
+
+
+
 #32. String ends with
 
 # def solution(text, ending):
@@ -449,3 +485,26 @@
 
 # print(solution("abc", "bc"))
 # print(solution("abc", "d"))
+
+
+
+
+
+#33. Boolean to String
+
+# def bool_to_word(b):
+#     return "Yes" if b else "No"
+
+# print(bool_to_word(True))
+# print(bool_to_word(False))
+
+
+
+
+#34. Double Integer
+
+# def double_integer(i):
+#     return i * 2
+
+# print(double_integer(2))
+# print(double_integer(10))
