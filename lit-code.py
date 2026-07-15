@@ -508,3 +508,24 @@
 
 # print(double_integer(2))
 # print(double_integer(10))
+
+
+
+#35. Pangram 
+
+# def is_pangram(sentence):
+#     return False if len(set(filter(str.isalpha, sentence.lower()))) < 26 else True
+
+# print(is_pangram("The quick brown fox jumps over the lazy dog."))
+
+
+
+
+#36. Add Binary 
+
+# def add_binary(a, b):
+#     return bin(a + b)[2:]
+
+# print(add_binary(1, 1))
+# print(add_binary(0, 1))
+# print(add_binary(1, 0))
