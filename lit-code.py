@@ -529,3 +529,35 @@
 # print(add_binary(1, 1))
 # print(add_binary(0, 1))
 # print(add_binary(1, 0))
+
+
+
+
+#37. Square Every Digit
+
+# def square_sum(numbers):
+#     return sum(x ** 2 for x in numbers)
+
+# print(square_sum([1, 2]))
+# print(square_sum([0, 3, 4, 5]))
+# print(square_sum([-3, 4]))
+
+
+
+
+
+#38. Duplicate Encoder
+
+# def duplicate_encode(word):
+#     word = word.lower()
+#     return ''.join(')' if word.count(char) > 1 else '(' for char in word)
+
+
+# def dublicate_encode(word):
+#     return duplicate_encode(word)
+
+
+# print(duplicate_encode("din"))
+# print(duplicate_encode("recede"))
+# print(duplicate_encode("Success"))
+# print(duplicate_encode("(( @"))
