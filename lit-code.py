@@ -561,3 +561,53 @@
 # print(duplicate_encode("recede"))
 # print(duplicate_encode("Success"))
 # print(duplicate_encode("(( @"))
+
+
+
+
+#39. Tribonacci Sequence
+
+#def tribonacci(signature, n):
+#    if n == 0:
+#        return []
+#    elif n == 1:
+#        return [signature[0]]
+#    elif n == 2:
+#        return signature[:2]
+#    elif n == 3:
+#        return signature
+#    
+#    trib = signature[:]
+#    for i in range(3, n):
+#        trib.append(trib[i-1] + trib[i-2] + trib[i-3])
+#    
+#    return trib
+
+#print(tribonacci([1, 1, 1], 10))
+#print(tribonacci([0, 0, 1], 10))
+#print(tribonacci([0, 1, 1], 10))
+#print(tribonacci([1, 0, 0], 10))
+#print(tribonacci([0, 0, 0], 10))
+#print(tribonacci([1, 2, 3], 10))
+#print(tribonacci([3, 2, 1], 10))
+#print(tribonacci([1, 1, 1], 1))
+#print(tribonacci([1, 1, 1], 2))
+#print(tribonacci([1, 1, 1], 3))
+#print(tribonacci([1, 1, 1], 4))
+#print(tribonacci([1, 1, 1], 5))
+#print(tribonacci([1, 1, 1], 6))
+#print(tribonacci([1, 1, 1], 7))
+#print(tribonacci([1, 1, 1], 8))
+#print(tribonacci([1, 1, 1], 9))
+#print(tribonacci([1, 1, 1], 10))
+
+
+#40. 
+
+def rental_car_cost(d):
+    return d * 40 - (d > 2) * 20 - (d > 6) * 30
+    
+print(rental_car_cost(1))
+print(rental_car_cost(4))
+print(rental_car_cost(7))
+print(rental_car_cost(8))
