@@ -602,12 +602,37 @@
 #print(tribonacci([1, 1, 1], 10))
 
 
-#40. 
+#40. Rental Car
 
-def rental_car_cost(d):
-    return d * 40 - (d > 2) * 20 - (d > 6) * 30
+# def rental_car_cost(d):
+#     return d * 40 - (d > 2) * 20 - (d > 6) * 30
     
-print(rental_car_cost(1))
-print(rental_car_cost(4))
-print(rental_car_cost(7))
-print(rental_car_cost(8))
+# print(rental_car_cost(1))
+# print(rental_car_cost(4))
+# print(rental_car_cost(7))
+# print(rental_car_cost(8))
+
+
+
+
+#41. Opposite Number
+
+# def opposite(number):
+#     return -number
+    
+# print(opposite(1))
+# print(opposite(-1))
+# print(opposite(0))
+# print(opposite(5))
+# print(opposite(-5))
+
+
+
+
+#42. Replace With Alphabet Position
+
+# def alphabet_position(text):
+#     return ' '.join(str(ord(char) - 96) for char in text.lower() if char.isalpha())
+
+# print(alphabet_position("The sunset sets at twelve o' clock."))
+# print(alphabet_position("The narwhal bacons at midnight."))
