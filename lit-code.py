@@ -636,3 +636,30 @@
 
 # print(alphabet_position("The sunset sets at twelve o' clock."))
 # print(alphabet_position("The narwhal bacons at midnight."))
+
+
+
+
+#43. Highest and Lowest
+
+# def high_and_low(numbers):
+#     nums = [int(x) for x in numbers.split()]
+#     return f"{max(nums)} {min(nums)}"
+
+# print(high_and_low("1 2 3 4 5"))
+# print(high_and_low("1 2 -3 4 5"))
+# print(high_and_low("1 2 3 4 -5"))
+
+
+
+
+#44. Convert a Number to a String!
+
+# def past(h, m, s):
+#     return (h * 3600 + m * 60 + s) * 1000
+
+# print(past(0, 1, 1))
+# print(past(1, 1, 1))
+# print(past(0, 0, 0))
+# print(past(1, 0, 1))
+# print(past(1, 0, 0))
