@@ -663,3 +663,23 @@
 # print(past(0, 0, 0))
 # print(past(1, 0, 1))
 # print(past(1, 0, 0))
+
+
+
+#45. Number of People in the Bus
+
+# def number(bus_stops):
+#     return sum(on - off for on, off in bus_stops)
+
+# print(number([[10,0],[3,5],[5,8]]))
+# print(number([[3,0],[9,1],[4,10],[12,2],[6,1],[7,10]]))
+# print(number([[3,0],[9,1],[4,8],[12,2],[6,1],[7,8]]))
+
+
+
+
+#46. Count Smileys  
+
+# def count_smileys(arr):
+#     return sum(1 for i in arr if i in [':)', ':D', ';)', ';D', ':-)', ':-D', ';-)', ';-D', ':~)', ':~D', ';~)', ';~D'])
+
