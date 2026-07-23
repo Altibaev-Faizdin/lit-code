@@ -61,7 +61,6 @@
 
 
 
-
 #4. Reverse Words
 
 # def reverse_words(text):
@@ -109,7 +108,6 @@
 #         return False
 
 # print(eat_ghost(True, True))
-
 
 
 
@@ -177,7 +175,6 @@
 
 #     return result
 # print(disemvowel("This website is for losers LOL!"))
-
 
 
 
@@ -278,8 +275,6 @@
 
 
 
-
-
 #17. No space
 
 #def no_space(x):
@@ -314,14 +309,12 @@
 
 
 
-
 #20.
 # def find_needle(haystack):
 #     index = haystack.index("needle")
 #     return "found the needle at position " + str(index)
 
 # print(find_needle(["hay", "junk", "hay", "hay", "moreJunk", "needle", "randomJunk"]))
-
 
 
 
@@ -339,9 +332,6 @@
 # print(find_next_square(121))
 # print(find_next_square(625))
 # print(find_next_square(114))
-
-
-
 
 
 
@@ -364,8 +354,6 @@
 
 
 
-
-
 #23. Printer Errors
 
 # def printer_error(s):
@@ -383,9 +371,6 @@
 
 
 
-
-
-
 #24. Repeat String
 
 # def repeat_str(repeat, string):
@@ -398,7 +383,6 @@
 
 
 
-
 #25. Two to One
 
 # def longest(a1, a2):
@@ -407,9 +391,6 @@
 # print(longest("aretheyhere", "yestheyarehere"))
 # print(longest("loopingisfunbutdangerous", "lessdangerousthancoding"))
 # print(longest("inmanylanguages", "theresapairoffunctions"))
-
-
-
 
 
 
@@ -433,7 +414,6 @@
 
 
 
-
 #30. Get Volume of Cuboid
 
 # def get_volume_of_cuboid(length, width, height):
@@ -441,8 +421,6 @@
 
 # print(get_volume_of_cuboid(1, 2, 2))
 # print(get_volume_of_cuboid(6.3, 2, 5))
-
-
 
 
 
@@ -461,8 +439,6 @@
 
 
 
-
-
 #31. Odd or Even
 
 # def odd_or_even(arr):
@@ -477,7 +453,6 @@
 
 
 
-
 #32. String ends with
 
 # def solution(text, ending):
@@ -485,7 +460,6 @@
 
 # print(solution("abc", "bc"))
 # print(solution("abc", "d"))
-
 
 
 
@@ -510,14 +484,12 @@
 # print(double_integer(10))
 
 
-
 #35. Pangram 
 
 # def is_pangram(sentence):
 #     return False if len(set(filter(str.isalpha, sentence.lower()))) < 26 else True
 
 # print(is_pangram("The quick brown fox jumps over the lazy dog."))
-
 
 
 
@@ -532,7 +504,6 @@
 
 
 
-
 #37. Square Every Digit
 
 # def square_sum(numbers):
@@ -541,7 +512,6 @@
 # print(square_sum([1, 2]))
 # print(square_sum([0, 3, 4, 5]))
 # print(square_sum([-3, 4]))
-
 
 
 
@@ -561,7 +531,6 @@
 # print(duplicate_encode("recede"))
 # print(duplicate_encode("Success"))
 # print(duplicate_encode("(( @"))
-
 
 
 
@@ -614,7 +583,6 @@
 
 
 
-
 #41. Opposite Number
 
 # def opposite(number):
@@ -628,7 +596,6 @@
 
 
 
-
 #42. Replace With Alphabet Position
 
 # def alphabet_position(text):
@@ -636,7 +603,6 @@
 
 # print(alphabet_position("The sunset sets at twelve o' clock."))
 # print(alphabet_position("The narwhal bacons at midnight."))
-
 
 
 
@@ -652,7 +618,6 @@
 
 
 
-
 #44. Convert a Number to a String!
 
 # def past(h, m, s):
@@ -663,7 +628,6 @@
 # print(past(0, 0, 0))
 # print(past(1, 0, 1))
 # print(past(1, 0, 0))
-
 
 
 #45. Number of People in the Bus
@@ -677,15 +641,10 @@
 
 
 
-
 #46. Count Smileys  
 
 # def count_smileys(arr):
 #     return sum(1 for i in arr if i in [':)', ':D', ';)', ';D', ':-)', ':-D', ';-)', ';-D', ':~)', ':~D', ';~)', ';~D'])
-
-
-
-
 
 
 #47. Mumbling
@@ -711,8 +670,6 @@
 
 
 
-
-
 #48. Count characters in your string
 
 # def count_by(s):
@@ -720,3 +677,80 @@
 #     for char in s:
 #         result[char] = result.get(char, 0) + 1
 #     return result
+
+
+#49. Find Nth Digit - Day 20
+
+# Задача: Найти N-тый символ (цифру) в последовательности 123456789101112131415...
+
+def find_nth_digit(n):
+    """
+    Находит N-тый символ в последовательности 123456789101112131415...
+    
+    :param n: int - позиция символа (начиная с 1)
+    :return: int - N-тый символ (цифра)
+    """
+    digits = 1  # количество цифр в числе (1 для чисел 1-9, 2 для 10-99, и т.д.)
+    count = 9  # количество чисел с 'digits' цифрами
+    start = 1  # первое число с 'digits' цифрами
+    
+    # Пропускаем все числа пока не найдём нужный диапазон
+    while n > digits * count:
+        n -= digits * count
+        digits += 1
+        count *= 10
+        start *= 10
+    
+    # Находим нужное число
+    num = start + (n - 1) // digits
+    
+    # Находим нужную цифру в этом числе
+    digit_index = (n - 1) % digits
+    
+    return int(str(num)[digit_index])
+
+
+# Примеры использования:
+# print(find_nth_digit(3))    # 3
+# print(find_nth_digit(10))   # 1 (первая цифра числа 10)
+# print(find_nth_digit(11))   # 0 (вторая цифра числа 10)
+# print(find_nth_digit(12))   # 1 (первая цифра числа 11)
+# print(find_nth_digit(190))  # 3 (цифра в большей позиции)
+
+
+#50. Is Valid Parentheses - Day 20
+
+# Задача: Проверить, правильно ли расставлены скобки
+
+def is_valid_parentheses(s):
+    """
+    Проверяет, правильно ли расставлены круглые скобки в строке.
+    
+    :param s: str - строка со скобками
+    :return: bool - True если скобки правильно расставлены, False иначе
+    """
+    count = 0
+    
+    for char in s:
+        if char == '(':
+            count += 1
+        elif char == ')':
+            count -= 1
+        
+        # Если в какой-то момент больше закрывающих скобок
+        if count < 0:
+            return False
+    
+    # В конце count должен быть 0
+    return count == 0
+
+
+# Примеры использования:
+# print(is_valid_parentheses("()"))          # True
+# print(is_valid_parentheses("(())"))        # True
+# print(is_valid_parentheses("()()"))        # True
+# print(is_valid_parentheses("("))           # False
+# print(is_valid_parentheses(")"))           # False
+# print(is_valid_parentheses("(("))          # False
+# print(is_valid_parentheses("())"))         # False
+# print(is_valid_parentheses("(()())"))      # True
