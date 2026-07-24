@@ -679,70 +679,70 @@
 #     return result
 
 
-#49. Find Nth Digit - Day 20
+# #49. Find Nth Digit - Day 20
 
-# Задача: Найти N-тый символ (цифру) в последовательности 123456789101112131415...
+# # Задача: Найти N-тый символ (цифру) в последовательности 123456789101112131415...
 
-def find_nth_digit(n):
-    """
-    Находит N-тый символ в последовательности 123456789101112131415...
+# def find_nth_digit(n):
+#     """
+#     Находит N-тый символ в последовательности 123456789101112131415...
     
-    :param n: int - позиция символа (начиная с 1)
-    :return: int - N-тый символ (цифра)
-    """
-    digits = 1  # количество цифр в числе (1 для чисел 1-9, 2 для 10-99, и т.д.)
-    count = 9  # количество чисел с 'digits' цифрами
-    start = 1  # первое число с 'digits' цифрами
+#     :param n: int - позиция символа (начиная с 1)
+#     :return: int - N-тый символ (цифра)
+#     """
+#     digits = 1  # количество цифр в числе (1 для чисел 1-9, 2 для 10-99, и т.д.)
+#     count = 9  # количество чисел с 'digits' цифрами
+#     start = 1  # первое число с 'digits' цифрами
     
-    # Пропускаем все числа пока не найдём нужный диапазон
-    while n > digits * count:
-        n -= digits * count
-        digits += 1
-        count *= 10
-        start *= 10
+#     # Пропускаем все числа пока не найдём нужный диапазон
+#     while n > digits * count:
+#         n -= digits * count
+#         digits += 1
+#         count *= 10
+#         start *= 10
     
-    # Находим нужное число
-    num = start + (n - 1) // digits
+#     # Находим нужное число
+#     num = start + (n - 1) // digits
     
-    # Находим нужную цифру в этом числе
-    digit_index = (n - 1) % digits
+#     # Находим нужную цифру в этом числе
+#     digit_index = (n - 1) % digits
     
-    return int(str(num)[digit_index])
+#     return int(str(num)[digit_index])
 
 
-# Примеры использования:
-# print(find_nth_digit(3))    # 3
-# print(find_nth_digit(10))   # 1 (первая цифра числа 10)
-# print(find_nth_digit(11))   # 0 (вторая цифра числа 10)
-# print(find_nth_digit(12))   # 1 (первая цифра числа 11)
-# print(find_nth_digit(190))  # 3 (цифра в большей позиции)
+# # Примеры использования:
+# # print(find_nth_digit(3))    # 3
+# # print(find_nth_digit(10))   # 1 (первая цифра числа 10)
+# # print(find_nth_digit(11))   # 0 (вторая цифра числа 10)
+# # print(find_nth_digit(12))   # 1 (первая цифра числа 11)
+# # print(find_nth_digit(190))  # 3 (цифра в большей позиции)
 
 
-#50. Is Valid Parentheses - Day 20
+# #50. Is Valid Parentheses - Day 20
 
-# Задача: Проверить, правильно ли расставлены скобки
+# # Задача: Проверить, правильно ли расставлены скобки
 
-def is_valid_parentheses(s):
-    """
-    Проверяет, правильно ли расставлены круглые скобки в строке.
+# def is_valid_parentheses(s):
+#     """
+#     Проверяет, правильно ли расставлены круглые скобки в строке.
     
-    :param s: str - строка со скобками
-    :return: bool - True если скобки правильно расставлены, False иначе
-    """
-    count = 0
+#     :param s: str - строка со скобками
+#     :return: bool - True если скобки правильно расставлены, False иначе
+#     """
+#     count = 0
     
-    for char in s:
-        if char == '(':
-            count += 1
-        elif char == ')':
-            count -= 1
+#     for char in s:
+#         if char == '(':
+#             count += 1
+#         elif char == ')':
+#             count -= 1
         
-        # Если в какой-то момент больше закрывающих скобок
-        if count < 0:
-            return False
+#         # Если в какой-то момент больше закрывающих скобок
+#         if count < 0:
+#             return False
     
-    # В конце count должен быть 0
-    return count == 0
+#     # В конце count должен быть 0
+#     return count == 0
 
 
 # Примеры использования:
@@ -754,3 +754,105 @@ def is_valid_parentheses(s):
 # print(is_valid_parentheses("(("))          # False
 # print(is_valid_parentheses("())"))         # False
 # print(is_valid_parentheses("(()())"))      # True
+
+# #49. Find Nth Digit - Day 20
+
+# # Задача: Найти N-тый символ (цифру) в последовательности 123456789101112131415...
+
+# def find_nth_digit(n):
+#     """
+#     Находит N-тый символ в последовательности 123456789101112131415...
+    
+#     :param n: int - позиция символа (начиная с 1)
+#     :return: int - N-тый символ (цифра)
+#     """
+#     digits = 1  # количество цифр в числе (1 для чисел 1-9, 2 для 10-99, и т.д.)
+#     count = 9  # количество чисел с 'digits' цифрами
+#     start = 1  # первое число с 'digits' цифрами
+    
+#     # Пропускаем все числа пока не найдём нужный диапазон
+#     while n > digits * count:
+#         n -= digits * count
+#         digits += 1
+#         count *= 10
+#         start *= 10
+    
+#     # Находим нужное число
+#     num = start + (n - 1) // digits
+    
+#     # Находим нужную цифру в этом числе
+#     digit_index = (n - 1) % digits
+    
+#     return int(str(num)[digit_index])
+
+
+# # Примеры использования:
+# # print(find_nth_digit(3))    # 3
+# # print(find_nth_digit(10))   # 1 (первая цифра числа 10)
+# # print(find_nth_digit(11))   # 0 (вторая цифра числа 10)
+# # print(find_nth_digit(12))   # 1 (первая цифра числа 11)
+# # print(find_nth_digit(190))  # 3 (цифра в большей позиции)
+
+
+# #50. Is Valid Parentheses - Day 20
+
+# # Задача: Проверить, правильно ли расставлены скобки
+
+# def is_valid_parentheses(s):
+#     """
+#     Проверяет, правильно ли расставлены круглые скобки в строке.
+    
+#     :param s: str - строка со скобками
+#     :return: bool - True если скобки правильно расставлены, False иначе
+#     """
+#     count = 0
+    
+#     for char in s:
+#         if char == '(':
+#             count += 1
+#         elif char == ')':
+#             count -= 1
+        
+#         # Если в какой-то момент больше закрывающих скобок
+#         if count < 0:
+#             return False
+    
+#     # В конце count должен быть 0
+#     return count == 0
+
+
+# # Примеры использования:
+# # print(is_valid_parentheses("()"))          # True
+# # print(is_valid_parentheses("(())"))        # True
+# # print(is_valid_parentheses("()()"))        # True
+# # print(is_valid_parentheses("("))           # False
+# # print(is_valid_parentheses(")"))           # False
+# # print(is_valid_parentheses("(("))          # False
+# # print(is_valid_parentheses("())"))         # False
+# # print(is_valid_parentheses("(()())"))      # True
+
+
+
+#51. Number Lines
+
+# def number(lines):
+#     return [f"{i+1}: {line}" for i, line in enumerate(lines)]
+
+# print(number(["a", "b", "c"]))
+
+
+
+#52. Sum of odd numbers
+
+# def series_sum(n):
+#     total = 0
+#     for i in range(n):
+#         total += 1 / (1 + 3 * i)
+#     return f"{total:.2f}"
+# print(series_sum(0))  
+# print(series_sum(1))  
+# print(series_sum(2))  
+# print(series_sum(3))  
+# print(series_sum(5))  
+
+
