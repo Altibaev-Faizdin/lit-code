@@ -856,3 +856,53 @@
 # print(series_sum(5))  
 
 
+
+
+
+#53. Get Grade
+
+# def get_grade(s1, s2, s3):
+#     avg = (s1 + s2 + s3) / 3
+#     if avg >= 90:
+#         return 'A'
+#     elif avg >= 80:
+#         return 'B'
+#     elif avg >= 70:
+#         return 'C'
+#     elif avg >= 60:
+#         return 'D'
+#     else:
+#         return 'F'
+
+# print(get_grade(95, 90, 93))  
+# print(get_grade(85, 80, 87))  
+# print(get_grade(75, 70, 73))  
+# print(get_grade(65, 60, 63))  
+# print(get_grade(55, 50, 53))  
+
+
+
+
+
+#54. Longest Consecutive
+
+# def longest_consec(strarr, k):
+#     if k <= 0 or k > len(strarr):
+#         return ""
+    
+#     max_str = ""
+#     for i in range(len(strarr) - k + 1):
+#         current_str = ''.join(strarr[i:i+k])
+#         if len(current_str) > len(max_str):
+#             max_str = current_str
+    
+#     return max_str
+
+
+# print(longest_consec(["zone", "abigail", "theta", "form", "libe", "zas"], 2))
+
+# print(longest_consec(["ejjjjmmtthh", "zxxuueeg", "aanlljrrrxx", "dqqqaaabbb", "oocccffuucccjjjkkkjyyyeehh"], 1))
+
+# print(longest_consec([], 3))
+
+# print(longest_consec(["it", "wkppv", "ixoyx", "3452", "zzzzzzzzzzzz"], 15))
