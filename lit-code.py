@@ -724,7 +724,7 @@
 
 # def is_valid_parentheses(s):
 #     """
-#     Проверяет, правильно ли расставлены круглые скобки в строке.
+#     Провер��ет, правильно ли расставлены круглые скобки в строке.
     
 #     :param s: str - строка со скобками
 #     :return: bool - True если скобки правильно расставлены, False иначе
@@ -858,7 +858,6 @@
 
 
 
-
 #53. Get Grade
 
 # def get_grade(s1, s2, s3):
@@ -879,7 +878,6 @@
 # print(get_grade(75, 70, 73))  
 # print(get_grade(65, 60, 63))  
 # print(get_grade(55, 50, 53))  
-
 
 
 
@@ -906,3 +904,68 @@
 # print(longest_consec([], 3))
 
 # print(longest_consec(["it", "wkppv", "ixoyx", "3452", "zzzzzzzzzzzz"], 15))
+
+
+
+#55. Jump Game - LeetCode
+
+# Задача: Определить, можно ли достичь последнего индекса массива
+# Каждый элемент представляет максимальную длину прыжка с этой позиции
+
+def canJump(nums):
+    """
+    Определяет, можно ли достичь последнего индекса массива
+    
+    :param nums: list - массив целых чисел (максимальная длина прыжка)
+    :return: bool - True если можно достичь конца, False иначе
+    """
+    max_reach = 0
+    for i, jump in enumerate(nums):
+        if i > max_reach:
+            return False
+        max_reach = max(max_reach, i + jump)
+        if max_reach >= len(nums) - 1:
+            return True
+    return True
+
+# Примеры:
+# print(canJump([2,3,1,1,4]))    # True
+# print(canJump([3,2,1,0,4]))    # False
+# print(canJump([0]))             # True
+# print(canJump([1,0]))           # True
+
+
+
+#56. Merge Intervals - LeetCode
+
+# Задача: Объединить перекрывающиеся интервалы
+# Дан массив интервалов, вернуть массив неперекрывающихся интервалов
+
+def merge(intervals):
+    """
+    Объединяет все перекрывающиеся интервалы
+    
+    :param intervals: list - список интервалов [[start, end], ...]
+    :return: list - список объединённых интервалов
+    """
+    if not intervals:
+        return []
+
+    # Сортируем интервалы по началу
+    intervals.sort(key=lambda x: x[0])
+    merged = [intervals[0]]
+
+    for current in intervals[1:]:
+        last = merged[-1]
+        if current[0] <= last[1]:  # Есть перекрытие
+            last[1] = max(last[1], current[1])
+        else:
+            merged.append(current)
+    return merged
+
+# Примеры:
+# print(merge([[1,3],[2,6],[8,10],[15,18]]))        # [[1,6],[8,10],[15,18]]
+# print(merge([[1,4],[4,5]]))                        # [[1,5]]
+# print(merge([[1,4],[2,3]]))                        # [[1,4]]
+# print(merge([[1,2],[1,0]]))                        # [[0,2]] или [[1,2]]
+# print(merge([]))                                   # []
