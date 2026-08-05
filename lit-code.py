@@ -969,3 +969,219 @@ def merge(intervals):
 # print(merge([[1,4],[2,3]]))                        # [[1,4]]
 # print(merge([[1,2],[1,0]]))                        # [[0,2]] или [[1,2]]
 # print(merge([]))                                   # []
+
+
+
+
+#57. Best Time to Buy and Sell Stock - LeetCode
+
+# Задача:
+# Дан массив цен акций.
+# Нужно купить один раз и продать один раз,
+# чтобы получить максимальную прибыль.
+
+def maxProfit(prices):
+    """
+    Возвращает максимальную прибыль.
+
+    :param prices: list[int]
+    :return: int
+    """
+
+    min_price = float("inf")
+    profit = 0
+
+    for price in prices:
+
+        # Запоминаем минимальную цену
+        if price < min_price:
+            min_price = price
+
+        # Считаем максимальную прибыль
+        profit = max(profit, price - min_price)
+
+    return profit
+
+# print(maxProfit([7,1,5,3,6,4]))   # 5
+# print(maxProfit([7,6,4,3,1]))     # 0
+
+
+
+
+
+#58. Valid Anagram - LeetCode
+
+# Задача:
+# Проверить, являются ли две строки анаграммами.
+
+def isAnagram(s, t):
+    """
+    Проверяет являются ли строки анаграммами.
+
+    :param s: str
+    :param t: str
+    :return: bool
+    """
+
+    return sorted(s) == sorted(t)
+
+# print(isAnagram("anagram", "nagaram"))   # True
+# print(isAnagram("rat", "car"))           # False
+
+
+
+
+
+
+
+
+#59. Two Sum - LeetCode
+
+# Задача:
+# Найти индексы двух чисел,
+# сумма которых равна target.
+
+def twoSum(nums, target):
+    """
+    Возвращает индексы двух чисел.
+
+    :param nums: list[int]
+    :param target: int
+    :return: list[int]
+    """
+
+    seen = {}
+
+    for i, num in enumerate(nums):
+
+        diff = target - num
+
+        if diff in seen:
+            return [seen[diff], i]
+
+        seen[num] = i
+
+# print(twoSum([2,7,11,15],9))   # [0,1]
+# print(twoSum([3,2,4],6))       # [1,2]
+
+
+
+
+
+
+
+#60. Contains Duplicate - LeetCode
+
+# Задача:
+# Проверить есть ли одинаковые элементы.
+
+def containsDuplicate(nums):
+    """
+    Проверяет наличие повторений.
+
+    :param nums: list[int]
+    :return: bool
+    """
+
+    return len(nums) != len(set(nums))
+
+# print(containsDuplicate([1,2,3,1]))   # True
+# print(containsDuplicate([1,2,3,4]))   # False
+
+
+
+
+
+
+
+
+#61. Valid Palindrome - LeetCode
+
+# Задача:
+# Проверить является ли строка палиндромом.
+
+def isPalindrome(s):
+    """
+    Проверяет палиндром.
+
+    :param s: str
+    :return: bool
+    """
+
+    cleaned = ""
+
+    for char in s.lower():
+        if char.isalnum():
+            cleaned += char
+
+    return cleaned == cleaned[::-1]
+
+# print(isPalindrome("A man, a plan, a canal: Panama"))   # True
+# print(isPalindrome("race a car"))                        # False
+
+
+
+
+
+#62. Maximum Subarray - LeetCode
+
+# Задача:
+# Найти максимальную сумму непрерывного подмассива.
+
+def maxSubArray(nums):
+    """
+    Алгоритм Кадане.
+
+    :param nums: list[int]
+    :return: int
+    """
+
+    current = nums[0]
+    best = nums[0]
+
+    for num in nums[1:]:
+
+        current = max(num, current + num)
+        best = max(best, current)
+
+    return best
+
+# print(maxSubArray([-2,1,-3,4,-1,2,1,-5,4]))   # 6
+# print(maxSubArray([1]))                        # 1
+
+
+
+#63. Binary Search - LeetCode
+
+# Задача:
+# Найти индекс элемента в отсортированном массиве.
+
+def search(nums, target):
+    """
+    Бинарный поиск.
+
+    :param nums: list[int]
+    :param target: int
+    :return: int
+    """
+
+    left = 0
+    right = len(nums) - 1
+
+    while left <= right:
+
+        mid = (left + right) // 2
+
+        if nums[mid] == target:
+            return mid
+
+        elif nums[mid] < target:
+            left = mid + 1
+
+        else:
+            right = mid - 1
+
+    return -1
+
+# print(search([-1,0,3,5,9,12],9))    # 4
+# print(search([-1,0,3,5,9,12],2))    # -1
