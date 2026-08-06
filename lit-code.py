@@ -912,27 +912,22 @@
 # Задача: Определить, можно ли достичь последнего индекса массива
 # Каждый элемент представляет максимальную длину прыжка с этой позиции
 
-def canJump(nums):
-    """
-    Определяет, можно ли достичь последнего индекса массива
+# def canJump(nums):
+#     """
+#     Определяет, можно ли достичь последнего индекса массива
     
-    :param nums: list - массив целых чисел (максимальная длина прыжка)
-    :return: bool - True если можно достичь конца, False иначе
-    """
-    max_reach = 0
-    for i, jump in enumerate(nums):
-        if i > max_reach:
-            return False
-        max_reach = max(max_reach, i + jump)
-        if max_reach >= len(nums) - 1:
-            return True
-    return True
+#     :param nums: list - массив целых чисел (максимальная длина прыжка)
+#     :return: bool - True если можно достичь конца, False иначе
+#     """
+#     max_reach = 0
+#     for i, jump in enumerate(nums):
+#         if i > max_reach:
+#             return False
+#         max_reach = max(max_reach, i + jump)
+#         if max_reach >= len(nums) - 1:
+#             return True
+#     return True
 
-# Примеры:
-# print(canJump([2,3,1,1,4]))    # True
-# print(canJump([3,2,1,0,4]))    # False
-# print(canJump([0]))             # True
-# print(canJump([1,0]))           # True
 
 
 
@@ -941,34 +936,27 @@ def canJump(nums):
 # Задача: Объединить перекрывающиеся интервалы
 # Дан массив интервалов, вернуть массив неперекрывающихся интервалов
 
-def merge(intervals):
-    """
-    Объединяет все перекрывающиеся интервалы
+# def merge(intervals):
+#     """
+#     Объединяет все перекрывающиеся интервалы
     
-    :param intervals: list - список интервалов [[start, end], ...]
-    :return: list - список объединённых интервалов
-    """
-    if not intervals:
-        return []
+#     :param intervals: list - список интервалов [[start, end], ...]
+#     :return: list - список объединённых интервалов
+#     """
+#     if not intervals:
+#         return []
 
-    # Сортируем интервалы по началу
-    intervals.sort(key=lambda x: x[0])
-    merged = [intervals[0]]
+#     # Сортируем интервалы по началу
+#     intervals.sort(key=lambda x: x[0])
+#     merged = [intervals[0]]
 
-    for current in intervals[1:]:
-        last = merged[-1]
-        if current[0] <= last[1]:  # Есть перекрытие
-            last[1] = max(last[1], current[1])
-        else:
-            merged.append(current)
-    return merged
-
-# Примеры:
-# print(merge([[1,3],[2,6],[8,10],[15,18]]))        # [[1,6],[8,10],[15,18]]
-# print(merge([[1,4],[4,5]]))                        # [[1,5]]
-# print(merge([[1,4],[2,3]]))                        # [[1,4]]
-# print(merge([[1,2],[1,0]]))                        # [[0,2]] или [[1,2]]
-# print(merge([]))                                   # []
+#     for current in intervals[1:]:
+#         last = merged[-1]
+#         if current[0] <= last[1]:  # Есть перекрытие
+#             last[1] = max(last[1], current[1])
+#         else:
+#             merged.append(current)
+#     return merged
 
 
 
@@ -980,31 +968,27 @@ def merge(intervals):
 # Нужно купить один раз и продать один раз,
 # чтобы получить максимальную прибыль.
 
-def maxProfit(prices):
-    """
-    Возвращает максимальную прибыль.
+# def maxProfit(prices):
+#     """
+#     Возвращает максимальную прибыль.
 
-    :param prices: list[int]
-    :return: int
-    """
+#     :param prices: list[int]
+#     :return: int
+#     """
 
-    min_price = float("inf")
-    profit = 0
+#     min_price = float("inf")
+#     profit = 0
 
-    for price in prices:
+#     for price in prices:
 
-        # Запоминаем минимальную цену
-        if price < min_price:
-            min_price = price
+#         # Запоминаем минимальную цену
+#         if price < min_price:
+#             min_price = price
 
-        # Считаем максимальную прибыль
-        profit = max(profit, price - min_price)
+#         # Считаем максимальную прибыль
+#         profit = max(profit, price - min_price)
 
-    return profit
-
-# print(maxProfit([7,1,5,3,6,4]))   # 5
-# print(maxProfit([7,6,4,3,1]))     # 0
-
+#     return profit
 
 
 
@@ -1014,19 +998,16 @@ def maxProfit(prices):
 # Задача:
 # Проверить, являются ли две строки анаграммами.
 
-def isAnagram(s, t):
-    """
-    Проверяет являются ли строки анаграммами.
+# def isAnagram(s, t):
+#     """
+#     Проверяет являются ли строки анаграммами.
 
-    :param s: str
-    :param t: str
-    :return: bool
-    """
+#     :param s: str
+#     :param t: str
+#     :return: bool
+#     """
 
-    return sorted(s) == sorted(t)
-
-# print(isAnagram("anagram", "nagaram"))   # True
-# print(isAnagram("rat", "car"))           # False
+#     return sorted(s) == sorted(t)
 
 
 
@@ -1041,28 +1022,25 @@ def isAnagram(s, t):
 # Найти индексы двух чисел,
 # сумма которых равна target.
 
-def twoSum(nums, target):
-    """
-    Возвращает индексы двух чисел.
+# def twoSum(nums, target):
+#     """
+#     Возвращает индексы двух чисел.
 
-    :param nums: list[int]
-    :param target: int
-    :return: list[int]
-    """
+#     :param nums: list[int]
+#     :param target: int
+#     :return: list[int]
+#     """
 
-    seen = {}
+#     seen = {}
 
-    for i, num in enumerate(nums):
+#     for i, num in enumerate(nums):
 
-        diff = target - num
+#         diff = target - num
 
-        if diff in seen:
-            return [seen[diff], i]
+#         if diff in seen:
+#             return [seen[diff], i]
 
-        seen[num] = i
-
-# print(twoSum([2,7,11,15],9))   # [0,1]
-# print(twoSum([3,2,4],6))       # [1,2]
+#         seen[num] = i
 
 
 
@@ -1075,18 +1053,15 @@ def twoSum(nums, target):
 # Задача:
 # Проверить есть ли одинаковые элементы.
 
-def containsDuplicate(nums):
-    """
-    Проверяет наличие повторений.
+# def containsDuplicate(nums):
+#     """
+#     Проверяет наличие повторений.
 
-    :param nums: list[int]
-    :return: bool
-    """
+#     :param nums: list[int]
+#     :return: bool
+#     """
 
-    return len(nums) != len(set(nums))
-
-# print(containsDuplicate([1,2,3,1]))   # True
-# print(containsDuplicate([1,2,3,4]))   # False
+#     return len(nums) != len(set(nums))
 
 
 
@@ -1099,25 +1074,22 @@ def containsDuplicate(nums):
 
 # Задача:
 # Проверить является ли строка палиндромом.
+# def isPalindrome(s):
+#     """
+#     Проверяет палиндром.
 
-def isPalindrome(s):
-    """
-    Проверяет палиндром.
+#     :param s: str
+#     :return: bool
+#     """
 
-    :param s: str
-    :return: bool
-    """
+#     cleaned = ""
 
-    cleaned = ""
+#     for char in s.lower():
+#         if char.isalnum():
+#             cleaned += char
 
-    for char in s.lower():
-        if char.isalnum():
-            cleaned += char
+#     return cleaned == cleaned[::-1]
 
-    return cleaned == cleaned[::-1]
-
-# print(isPalindrome("A man, a plan, a canal: Panama"))   # True
-# print(isPalindrome("race a car"))                        # False
 
 
 
@@ -1127,27 +1099,25 @@ def isPalindrome(s):
 
 # Задача:
 # Найти максимальную сумму непрерывного подмассива.
+# def maxSubArray(nums):
+#     """
+#     Алгоритм Кадане.
 
-def maxSubArray(nums):
-    """
-    Алгоритм Кадане.
+#     :param nums: list[int]
+#     :return: int
+#     """
 
-    :param nums: list[int]
-    :return: int
-    """
+#     current = nums[0]
+#     best = nums[0]
 
-    current = nums[0]
-    best = nums[0]
+#     for num in nums[1:]:
 
-    for num in nums[1:]:
+#         current = max(num, current + num)
+#         best = max(best, current)
 
-        current = max(num, current + num)
-        best = max(best, current)
+#     return best
 
-    return best
 
-# print(maxSubArray([-2,1,-3,4,-1,2,1,-5,4]))   # 6
-# print(maxSubArray([1]))                        # 1
 
 
 
@@ -1156,32 +1126,66 @@ def maxSubArray(nums):
 # Задача:
 # Найти индекс элемента в отсортированном массиве.
 
-def search(nums, target):
-    """
-    Бинарный поиск.
+# def search(nums, target):
+#     """
+#     Бинарный поиск.
 
-    :param nums: list[int]
-    :param target: int
-    :return: int
-    """
+#     :param nums: list[int]
+#     :param target: int
+#     :return: int
+#     """
 
-    left = 0
-    right = len(nums) - 1
+#     left = 0
+#     right = len(nums) - 1
 
-    while left <= right:
+#     while left <= right:
 
-        mid = (left + right) // 2
+#         mid = (left + right) // 2
 
-        if nums[mid] == target:
-            return mid
+#         if nums[mid] == target:
+#             return mid
 
-        elif nums[mid] < target:
-            left = mid + 1
+#         elif nums[mid] < target:
+#             left = mid + 1
 
-        else:
-            right = mid - 1
+#         else:
+#             right = mid - 1
 
-    return -1
+#     return -1
 
 # print(search([-1,0,3,5,9,12],9))    # 4
 # print(search([-1,0,3,5,9,12],2))    # -1
+
+
+
+
+
+#64. Two Sum
+
+# def two_sum(numbers, target):
+#     seen = {}
+    
+#     for i, num in enumerate(numbers):
+#         diff = target - num
+        
+#         if diff in seen:
+#             return [seen[diff], i]
+        
+#         seen[num] = i
+    
+#     return []
+
+# print(two_sum([2,7,11,15], 9))  
+# print(two_sum([3,2,4], 6))      
+# print(two_sum([3,3], 6))        
+
+
+
+
+#65. Find the odd int
+
+# def find_it(seq):
+#     for num in seq:
+#         if seq.count(num) % 2 == 1:
+#             return num
+# print(find_it([20,1,-1,2,-2,3,3,5,5,1,2,4,20,4,-1,-2,5]))
