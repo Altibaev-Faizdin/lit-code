@@ -1189,3 +1189,22 @@
 #         if seq.count(num) % 2 == 1:
 #             return num
 # print(find_it([20,1,-1,2,-2,3,3,5,5,1,2,4,20,4,-1,-2,5]))
+
+
+
+
+
+#66. Find ODD
+
+#def find_odd(numbers):
+#    counts = {}
+
+#    for number in numbers:
+#        counts[number] = counts.get(number, 0) + 1
+
+#    for number, count in counts.items():
+#        if count % 2 != 0:
+#            return number
+
+#print(find_odd([1, 1, 2]))
+#print(find_odd([1, 2, 2, 3, 3, 3]))
