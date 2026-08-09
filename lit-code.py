@@ -1208,3 +1208,41 @@
 
 #print(find_odd([1, 1, 2]))
 #print(find_odd([1, 2, 2, 3, 3, 3]))
+
+
+
+
+#67. Array.diff
+
+#def array_diff(a, b):
+#    return [x for x in a if x not in b]
+    
+#print(array_diff([1,2], [1]))  
+#print(array_diff([1,2,2], [1]))  
+#print(array_diff([1,2,2], [2]))  
+#print(array_diff([1,2,2], []))  
+#print(array_diff([], [1,2]))  
+
+
+
+#68. Breaking chocolate problem
+
+#def bouncing_ball(h, bounce, window):
+#    if h <= 0 or bounce <= 0 or bounce >= 1 or window >= h:
+#        return -1
+#    
+#    count = 1
+#    h *= bounce
+#
+#   while h > window:
+#        count += 2
+#        h *= bounce
+#    
+#    return count
+#
+#print(bouncing_ball(3, 0.66, 1.5))  
+#print(bouncing_ball(30, 0.66, 1.5))  
+#print(bouncing_ball(30, 0.75, 1.5))  
+#print(bouncing_ball(30, 0.4, 10))  
+#print(bouncing_ball(40, 1, 10))  
+#print(bouncing_ball(-5, 0.66, 1.5)) 
