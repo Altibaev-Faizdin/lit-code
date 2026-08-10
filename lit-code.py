@@ -1246,3 +1246,42 @@
 #print(bouncing_ball(30, 0.4, 10))  
 #print(bouncing_ball(40, 1, 10))  
 #print(bouncing_ball(-5, 0.66, 1.5)) 
+
+
+
+
+
+#69. Climb - Solution 
+
+#class Solution:
+#    def climbStairs(self, n: int) -> int:
+#        a, b = 1, 1
+
+#        for _ in range(n):
+#            a, b = b, a + b
+
+#        return a
+
+
+
+
+
+#70. MySqrt
+
+#class Solution:
+#    def mySqrt(self, x: int) -> int:
+#        left = 0
+#        right = x
+#
+#        while left <= right:
+#            mid = (left + right) // 2
+#
+#            if mid * mid == x:
+#                return mid
+#
+#            if mid * mid < x:
+#                left = mid + 1
+#            else:
+#                right = mid - 1
+#
+#        return right
