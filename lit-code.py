@@ -1285,3 +1285,40 @@
 #                right = mid - 1
 #
 #        return right
+
+
+
+
+
+#71. Your order, please
+
+# def order(sentence):
+#     if sentence == "":
+#         return ""
+
+#     words = sentence.split()
+#     result = [""] * len(words)
+
+#     for word in words:
+#         for char in word:
+#             if char.isdigit():
+#                 number = int(char)
+#                 result[number - 1] = word
+
+#     return " ".join(result)
+
+# print(order("is2 Thi1s T4est 3a"))
+# print(order("4of Fo1r pe6ople g3ood th5e the2"))
+# print(order(""))
+# print(order("1"))
+# print(order("2be3or not4 to1 be5"))
+
+
+
+#71. Check for factor
+
+# def check_for_factor(base, factor):
+#     return base % factor == 0
+    
+# print(check_for_factor(10, 2))
+
