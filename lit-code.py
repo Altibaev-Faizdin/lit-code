@@ -1322,3 +1322,32 @@
     
 # print(check_for_factor(10, 2))
 
+
+
+#72. Sum without highest and lowest number
+
+# def sum_array(arr):
+#     if arr is None or len(arr) < 3:
+#         return 0
+#     return sum(arr) - min(arr) - max(arr)
+    
+# print(sum_array([6, 2, 1, 8, 10]))
+# print(sum_array([1, 1, 11, 2, 3]))
+# print(sum_array([]))
+# print(sum_array([3]))
+# print(sum_array([3, 5]))
+# print(sum_array([6, 2, 1, 8, 10]))
+# print(sum_array([-6, -20, -1, -10, -12]))
+# print(sum_array([-6, 20, -1, 10, -12]))
+
+
+
+#73.
+
+def filter_list(l):
+    return [x for x in l if isinstance(x, int)]
+    
+print(filter_list([1, 2, 'a', 'b']))
+print(filter_list([1, 'a', 'b', 0, 15]))
+print(filter_list([1, 2, 'aasf', '1', '123', 123]))
+    
