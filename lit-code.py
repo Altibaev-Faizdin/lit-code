@@ -1344,10 +1344,78 @@
 
 #73.
 
-def filter_list(l):
-    return [x for x in l if isinstance(x, int)]
+#def filter_list(l):
+#    return [x for x in l if isinstance(x, int)]
     
-print(filter_list([1, 2, 'a', 'b']))
-print(filter_list([1, 'a', 'b', 0, 15]))
-print(filter_list([1, 2, 'aasf', '1', '123', 123]))
+#print(filter_list([1, 2, 'a', 'b']))
+#print(filter_list([1, 'a', 'b', 0, 15]))
+#print(filter_list([1, 2, 'aasf', '1', '123', 123]))
     
+    
+    
+    
+    
+    
+    
+    
+#74. Trap
+
+#class Solution:
+#    def trap(self, height: list[int]) -> int:
+#        left = 0
+#        right = len(height) - 1
+#
+#        left_max = 0
+#        right_max = 0
+
+#        water = 0
+#
+#        while left < right:
+#            if height[left] < height[right]:
+
+#                if height[left] >= left_max:
+#                    left_max = height[left]
+#                else:
+#                    water += left_max - height[left]
+
+#                left += 1
+
+#            else:
+
+#                if height[right] >= right_max:
+#                    right_max = height[right]
+#                else:
+#                    water += right_max - height[right]
+#                right -= 1
+#
+#        return water
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#75. Larger
+
+#class Solution:
+#    def largestRectangleArea(self, h):
+#        stack = []
+#        ans = 0
+#
+#        for i, x in enumerate(h + [0]):
+#            while stack and h[stack[-1]] > x:
+#                height = h[stack.pop()]
+#                left = stack[-1] if stack else -1
+#                ans = max(ans, height * (i - left - 1))
+#            stack.append(i)
+
+#        return ans
