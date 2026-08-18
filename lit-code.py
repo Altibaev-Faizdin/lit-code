@@ -1393,17 +1393,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 #75. Larger
 
 #class Solution:
@@ -1444,3 +1433,40 @@
 
 #    def getMin(self):
 #        return self.s[-1][1]
+
+
+#77. Binnary
+
+# def binary_array_to_number(arr):
+#     return int("".join(map(str, arr)), 2)
+
+# print(binary_array_to_number([0, 0, 0, 1]))
+# print(binary_array_to_number([0, 0, 1, 0]))
+# print(binary_array_to_number([0, 1, 0, 1]))
+# print(binary_array_to_number([1, 0, 0, 1]))
+# print(binary_array_to_number([0, 0, 1, 0]))
+# print(binary_array_to_number([1, 0, 1, 0]))
+# print(binary_array_to_number([1, 0, 0, 1]))
+# print(binary_array_to_number([0, 0, 0, 0]))
+# print(binary_array_to_number([1, 1, 1, 1]))
+# print(binary_array_to_number([0, 1, 1, 0]))
+
+
+
+#78. Hero
+
+# def hero(bullets, dragons):
+#     return bullets >= dragons * 2
+
+# print(hero(10, 5))
+# print(hero(7, 4))
+# print(hero(4, 5))
+# print(hero(100, 40))
+# print(hero(1500, 751))
+# print(hero(0, 1))
+# print(hero(100, 40))
+# print(hero(1500, 751))
+# print(hero(0, 1))
+# print(hero(100, 40))
+# print(hero(1500, 751))
+# print(hero(0, 1))
