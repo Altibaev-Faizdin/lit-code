@@ -1470,3 +1470,20 @@
 # print(hero(100, 40))
 # print(hero(1500, 751))
 # print(hero(0, 1))
+
+
+
+
+
+#79. Quarter
+
+#def quarter(month):
+#    return (month - 1) // 3 + 1
+
+
+
+
+#80. Descending order
+
+#def descending_order(n):
+#    return int(''.join(sorted(str(n), reverse=True)))
