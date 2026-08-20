@@ -1487,3 +1487,33 @@
 
 #def descending_order(n):
 #    return int(''.join(sorted(str(n), reverse=True)))
+
+
+
+
+#81. Double Char
+
+# def double_char(s):
+#     return ''.join(c * 2 for c in s)
+
+# print(double_char("String"))
+
+
+
+
+
+#82. BMI
+
+# def bmi(weight, height):
+#     bmi_value = weight / height ** 2
+    
+#     if bmi_value <= 18.5:
+#         return "Underweight"
+#     elif bmi_value <= 25.0:
+#         return "Normal"
+#     elif bmi_value <= 30.0:
+#         return "Overweight"
+#     else:
+#         return "Obese"
+
+    
