@@ -1516,4 +1516,20 @@
 #     else:
 #         return "Obese"
 
-    
+
+
+
+#83. Comp
+
+# def comp(array1, array2):
+#     if array1 is None or array2 is None:
+#         return False
+#     return sorted(x * x for x in array1) == sorted(array2)
+
+
+
+
+#84. Keep up the hoop
+
+# def hoop_count(n):
+#     return "Keep at it until you get it" if n < 10 else "Great, now move on to tricks"
