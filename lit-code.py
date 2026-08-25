@@ -1533,3 +1533,29 @@
 
 # def hoop_count(n):
 #     return "Keep at it until you get it" if n < 10 else "Great, now move on to tricks"
+
+
+
+
+
+#85. Find Even Index
+
+# def find_even_index(arr):
+#     for i in range(len(arr)):
+#         if sum(arr[:i]) == sum(arr[i+1:]):
+#             return i
+#     return -1
+
+
+
+
+
+#86. Traffic Light
+
+# def update_light(current):
+#     if current == "green":
+#         return "yellow"
+#     elif current == "yellow":
+#         return "red"
+#     elif current == "red":
+#         return "green"
