@@ -1559,3 +1559,22 @@
 #         return "red"
 #     elif current == "red":
 #         return "green"
+
+
+
+
+#87. Invert values
+
+# def invert(list):
+#     return [-x for x in list]
+
+
+
+#88. Counting Duplicates
+
+# def duplicate_count(text):
+#     text = text.lower()
+#     count = {}
+#     for char in text:
+#         count[char] = count.get(char, 0) + 1
+#     return sum(1 for freq in count.values() if freq > 1)
