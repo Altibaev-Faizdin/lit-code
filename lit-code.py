@@ -1578,3 +1578,23 @@
 #     for char in text:
 #         count[char] = count.get(char, 0) + 1
 #     return sum(1 for freq in count.values() if freq > 1)
+
+
+
+
+
+#89. Opposite number
+
+#def lovefunc(flower1, flower2):
+#    return (flower1 + flower2) % 2 == 1
+
+
+
+#90. Sum of numbers from 0 to N
+
+#def sum_dig_pow(a, b):
+#    def is_sum_of_digits_raised_to_consecutive_powers(n):
+#        digits = [int(d) for d in str(n)]
+#        return sum(d ** (i + 1) for i, d in enumerate(digits)) == n
+    
+#    return [n for n in range(a, b + 1) if is_sum_of_digits_raised_to_consecutive_powers(n)]
