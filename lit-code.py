@@ -1598,3 +1598,31 @@
 #        return sum(d ** (i + 1) for i, d in enumerate(digits)) == n
     
 #    return [n for n in range(a, b + 1) if is_sum_of_digits_raised_to_consecutive_powers(n)]
+
+
+
+
+
+
+
+#91. Product of consecutive Fib numbers
+
+# def product_fib(_prod):
+#     a, b = 0, 1
+#     while a * b < _prod:
+#         a, b = b, a + b
+#     return [a, b, a * b == _prod]
+
+
+
+
+
+
+
+#92. Sum of Digits / Digital Root
+
+# def dig_pow(n, p):
+#     digits = [int(d) for d in str(n)]
+#     total = sum(d ** (p + i) for i, d in enumerate(digits))
+#     k, remainder = divmod(total, n)
+#     return k if remainder == 0 else -1
