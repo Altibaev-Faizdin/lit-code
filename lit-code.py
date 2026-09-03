@@ -1626,3 +1626,28 @@
 #     total = sum(d ** (p + i) for i, d in enumerate(digits))
 #     k, remainder = divmod(total, n)
 #     return k if remainder == 0 else -1
+
+
+
+
+
+#93. Delete occurrences of an element if it occurs more than n times
+
+# def delete_nth(order,max_e):
+#     count = {}
+#     result = []
+#     for num in order:
+#         count[num] = count.get(num, 0) + 1
+#         if count[num] <= max_e:
+#             result.append(num)
+#     return result
+
+
+
+
+
+
+#94. Returning Strings
+
+# def greet(name):
+#     return f"Hello, {name} how are you doing today?"
