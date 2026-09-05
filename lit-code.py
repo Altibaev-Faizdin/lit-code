@@ -1681,3 +1681,21 @@
 #         return 75
 #     else:
 #         return 0
+
+
+
+
+
+
+#97. Parse nice int from char problem
+
+# def get_age(age):
+#     return int(age.split()[0])
+
+
+
+
+#98. Beginner - Sum of numbers
+
+# def get_sum(a,b):
+#     return sum(range(min(a, b), max(a, b) + 1))
