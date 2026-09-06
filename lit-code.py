@@ -1699,3 +1699,18 @@
 
 # def get_sum(a,b):
 #     return sum(range(min(a, b), max(a, b) + 1))
+
+
+
+#99. Beginner - Reduce but Grow
+
+# def paperwork(n, m):
+#     return n * m if n > 0 and m > 0 else 0
+
+
+
+
+#100. Powers of 2
+
+# def powers_of_two(n):
+#     return [2**i for i in range(n + 1)]
