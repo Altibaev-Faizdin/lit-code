@@ -1714,3 +1714,21 @@
 
 # def powers_of_two(n):
 #     return [2**i for i in range(n + 1)]
+
+
+
+
+
+#101. Switch it Up!
+
+# def switch_it_up(number):
+#     return ["Zero", "One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine"][number]
+
+
+
+
+
+#102. Convert number to reversed array of digits
+
+# def digitize(n):
+#     return [int(d) for d in str(n)][::-1]
