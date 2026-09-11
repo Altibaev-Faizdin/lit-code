@@ -1752,3 +1752,19 @@
 
 # def string_to_array(s):
 #     return s.split(" ")
+
+
+
+
+#105. Sort array by string length
+
+# def sort_by_length(arr):
+#     return sorted(arr, key=len)
+
+
+
+
+#106. String repeat
+
+# def str_count(strng, letter):
+#     return strng.count(letter)
