@@ -1768,3 +1768,21 @@
 
 # def str_count(strng, letter):
 #     return strng.count(letter)
+
+
+
+
+
+
+#107. You only need one
+
+# def validate_pin(pin):
+#     return len(pin) in (4, 6) and pin.isdigit()
+
+
+
+
+#108. altERnaTIng cAsE <=> ALTerNAtiNG CaSe
+
+# def to_alternating_case(string):
+#     return string.swapcase()
