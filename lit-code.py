@@ -1786,3 +1786,27 @@
 
 # def to_alternating_case(string):
 #     return string.swapcase()
+
+
+
+
+
+#109. Palindrome
+
+# def is_palindrome(s):
+#     s = s.lower()
+#     return s == s[::-1]
+
+
+
+
+#110. The Supermarket Queue
+
+# def queue_time(customers, n):
+#     tills = [0] * n
+
+#     for customer in customers:
+#         shortest_till = tills.index(min(tills))
+#         tills[shortest_till] += customer
+
+#     return max(tills)
