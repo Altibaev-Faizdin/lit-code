@@ -1810,3 +1810,32 @@
 #         tills[shortest_till] += customer
 
 #     return max(tills)
+
+
+
+
+
+
+#111. Find the Difference of the Two Arrays
+
+# def find_difference(a, b):
+#     return abs((a[0] * a[1] * a[2]) - (b[0] * b[1] * b[2]))
+
+
+
+
+
+
+#112. Take a Ten Minutes Walk
+
+# def dir_reduc(arr):
+#     opposites = {'NORTH': 'SOUTH', 'SOUTH': 'NORTH', 'EAST': 'WEST', 'WEST': 'EAST'}
+#     stack = []
+    
+#     for direction in arr:
+#         if stack and stack[-1] == opposites[direction]:
+#             stack.pop()
+#         else:
+#             stack.append(direction)
+    
+#     return stack
