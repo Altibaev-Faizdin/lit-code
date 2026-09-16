@@ -1839,3 +1839,24 @@
 #             stack.append(direction)
     
 #     return stack
+
+
+
+
+
+
+
+#113. Grasshopper - Messi Goals
+
+# def cockroach_speed(s):
+#     return int(s * 27.778)
+
+
+
+
+
+
+#114. Correct the mistakes of the character recognition software
+
+# def correct(s):
+#     return s.replace('5', 'S').replace('0', 'O').replace('1', 'I')
