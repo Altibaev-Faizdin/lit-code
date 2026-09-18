@@ -1860,3 +1860,28 @@
 
 # def correct(s):
 #     return s.replace('5', 'S').replace('0', 'O').replace('1', 'I')
+
+
+
+
+
+#115. Build a pile of Cubes
+
+# def find_nb(m):
+#     n = 0
+#     while m > 0:
+#         m -= n**3
+#         n += 1
+#     return n - 1 if m == 0 else -1
+
+
+
+
+
+#116. Counting Digits
+
+# def nb_dig(n, d):
+#     count = 0
+#     for i in range(n + 1):
+#         count += str(i * i).count(str(d))
+#     return count
