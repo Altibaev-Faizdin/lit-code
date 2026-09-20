@@ -1885,3 +1885,10 @@
 #     for i in range(n + 1):
 #         count += str(i * i).count(str(d))
 #     return count
+
+
+
+
+
+
+117
