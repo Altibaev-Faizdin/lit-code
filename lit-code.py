@@ -1888,5 +1888,57 @@
 
 
 
-117
+
+
+
+#117. Remove Anchor from URL
+
+# def remove_url_anchor(url):
+#     if "#" in url:
+#         return url.split("#")[0]
+#     return url
+
+
+
+
+
+
+#118. Rot13
+
+# def rot13(message):
+#     result = ""
+#     for char in message:
+#         if char.isalpha():
+#             if char.islower():
+#                 result += chr((ord(char) - ord('a') + 13) % 26 + ord('a'))
+#             else:
+#                 result += chr((ord(char) - ord('A') + 13) % 26 + ord('A'))
+#         else:
+#             result += char
+#     return result
+    
+
+
+
+
+
+#119. Sale Hotdogs
+
+# def sale_hotdogs(n):
+#     if n < 5:
+#         return n * 100
+#     elif n >= 5 and n < 10:
+#         return n * 95
+#     else:
+#         return n * 90
+
+
+
+
+
+
+#120. Sum of two lowest positive integers
+
+# def sum_two_smallest_numbers(numbers):
+#     return sum(sorted(numbers)[:2])
 
