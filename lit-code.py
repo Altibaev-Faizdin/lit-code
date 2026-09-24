@@ -1942,3 +1942,34 @@
 # def sum_two_smallest_numbers(numbers):
 #     return sum(sorted(numbers)[:2])
 
+
+
+
+
+
+#121. Sort the odd
+
+# def sort_array(source_array):
+#     odds = sorted([x for x in source_array if x % 2 != 0])
+#     odd_index = 0
+#     result = []
+#     for num in source_array:
+#         if num % 2 != 0:
+#             result.append(odds[odd_index])
+#             odd_index += 1
+#         else:
+#             result.append(num)
+#     return result
+
+
+
+
+
+
+#122. Find the stray number
+
+# def stray(arr):
+#     result = 0
+#     for num in arr:
+#         result ^= num
+#     return result
