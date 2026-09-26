@@ -1973,3 +1973,38 @@
 #     for num in arr:
 #         result ^= num
 #     return result
+
+
+
+
+
+#123. Reversed Strings
+
+# def solution(s):
+#     return s[::-1]
+
+
+
+
+
+#124. Diomond space
+
+# def diamond(n):
+#     if n <= 0 or n % 2 == 0:
+#         return None
+    
+#     result = []
+    
+#     # Build the top half (including the middle, widest line)
+#     for i in range(n // 2 + 1):
+#         spaces = ' ' * (n // 2 - i)
+#         stars = '*' * (2 * i + 1)
+#         result.append(spaces + stars)
+    
+#     # Build the bottom half (excluding the middle line)
+#     for i in range(n // 2 - 1, -1, -1):
+#         spaces = ' ' * (n // 2 - i)
+#         stars = '*' * (2 * i + 1)
+#         result.append(spaces + stars)
+    
+#     return '\n'.join(result) + '\n'
