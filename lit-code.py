@@ -2008,3 +2008,32 @@
 #         result.append(spaces + stars)
     
 #     return '\n'.join(result) + '\n'
+
+
+
+
+
+
+
+#125. Tower builder
+
+# def tower_builder(n_floors):
+#     result = []
+#     for i in range(n_floors):
+#         spaces = ' ' * (n_floors - i - 1)
+#         stars = '*' * (2 * i + 1)
+#         result.append(spaces + stars + spaces)
+#     return result
+
+
+
+
+
+
+#126. Max-Min
+
+# def minimum(arr):
+#     return min(arr)
+
+# def maximum(arr):
+#     return max(arr)
