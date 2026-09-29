@@ -1,4 +1,3 @@
-
 #100 Days of Code - Python lit code
 # Day 1
 
@@ -2046,5 +2045,4 @@
 
 
 
-
-137
+127
