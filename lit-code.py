@@ -2045,4 +2045,17 @@
 
 
 
-127
+#127. Square(n) Sum
+
+# def square_sum(numbers):
+#     return sum(x ** 2 for x in numbers)
+
+
+
+
+
+#128. Count sheep
+
+# def count_sheeps(sheep):
+#     return sheep.count(True)
+    
