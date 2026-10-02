@@ -2059,3 +2059,25 @@
 # def count_sheeps(sheep):
 #     return sheep.count(True)
     
+
+
+
+
+
+
+#129. Isograms
+
+# def is_isogram(string):
+#     string = string.lower()
+#     return len(string) == len(set(string))
+
+
+
+
+
+#130. No zeros for heroe
+
+# def no_boring_zeros(n):
+#     if n == 0:
+#         return 0
+#     return int(str(n).rstrip('0'))
