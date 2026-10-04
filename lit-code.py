@@ -2119,3 +2119,22 @@
 # def minus(y): return lambda x: x - y
 # def times(y): return lambda x: x * y
 # def divided_by(y): return lambda x: x // y
+
+
+
+
+
+#133. Gimme
+
+# def gimme(input_array):
+#     return input_array.index(sorted(input_array)[1])
+
+
+
+
+
+
+#134. Even
+
+# def is_even(n):
+#     return n % 2 == 0
