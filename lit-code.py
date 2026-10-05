@@ -2138,3 +2138,22 @@
 
 # def is_even(n):
 #     return n % 2 == 0
+
+
+
+#135. Hello
+
+# def say_hello(name):
+#     return f"Hello, {name}"
+
+
+
+
+#136. Calculate Years
+
+# def calculate_years(principal, interest, tax, desired):
+#     years = 0
+#     while principal < desired:
+#         principal += principal * interest * (1 - tax)
+#         years += 1
+#     return years
