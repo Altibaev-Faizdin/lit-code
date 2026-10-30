@@ -2159,3 +2159,27 @@
 #     return years
 1
 
+
+
+#137. Is anagram
+
+# def is_anagram(test, original):
+#     return sorted(test.lower()) == sorted(original.lower())
+
+
+#138. Mumbling
+
+# def accum(st):
+#     return '-'.join(c.upper() + c.lower() * i for i, c in enumerate(st))
+
+
+#139. Reversing words
+
+# def reverse(st):
+#     return ' '.join(st.split()[::-1])
+
+
+#140. Position
+
+# def position(letter):
+#     return "Position of alphabet: " + str(ord(letter) - 96)
