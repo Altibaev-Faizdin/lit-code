@@ -2210,8 +2210,6 @@
 
 
 
-
-
 #143. Pipe Fix
 
 # def pipe_fix(nums):
