@@ -1,4 +1,4 @@
-ÝÏ#100 Days of Code - Python lit code
+#100 Days of Code - Python lit code
 # Day 1
 
 
@@ -2206,11 +2206,13 @@
 #142. Grasshopper - Messi Goals
 
 # def move(position, roll):
-#     return position + roll * 2çÊ 
-çÊèÊèÊûÊ ûÊâÌ 
-âÌæÌæÌºÍ ºÍ¾Í ¾Í¤Î ¤Î®Î ®Î¯Î ¯Î°Î 4°Î³Î*$eb1408fd-45f1-41ee-af24-e371383c756408³Î´Î 4´Î»Î*$eb1408fd-45f1-41ee-af24-e371383c756408»Î¿Î ¿ÎÒÎ 
-ÒÎÔÎÔÎýÎ 
-ýÎƒÏƒÏ…Ï 
-…Ï†Ï†Ï Ï 
- Ï£Ï£Ï½Ï 
-½Ï¿Ï¿ÏÝÏ "(511db302b47502f23482eb19738a242f3fb13b1c2)file:///home/weenzox/lit-code/lit-code.py:file:///home/weenzox/lit-code
+#     return position + roll * 2
+
+
+
+
+
+#143. Pipe Fix
+
+# def pipe_fix(nums):
+#     return list(range(nums[0], nums[-1] + 1))
