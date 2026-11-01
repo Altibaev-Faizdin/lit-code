@@ -1,4 +1,4 @@
-#100 Days of Code - Python lit code
+ÝÏ#100 Days of Code - Python lit code
 # Day 1
 
 
@@ -2173,13 +2173,44 @@
 #     return '-'.join(c.upper() + c.lower() * i for i, c in enumerate(st))
 
 
+
+
+
+
 #139. Reversing words
 
 # def reverse(st):
 #     return ' '.join(st.split()[::-1])
 
 
+
+
+
+
 #140. Position
 
 # def position(letter):
 #     return "Position of alphabet: " + str(ord(letter) - 96)
+
+
+
+
+
+
+#141. Sum Strings
+
+# def sum_str(a, b):
+#     return str(int(a or 0) + int(b or 0))
+
+
+#142. Grasshopper - Messi Goals
+
+# def move(position, roll):
+#     return position + roll * 2çÊ 
+çÊèÊèÊûÊ ûÊâÌ 
+âÌæÌæÌºÍ ºÍ¾Í ¾Í¤Î ¤Î®Î ®Î¯Î ¯Î°Î 4°Î³Î*$eb1408fd-45f1-41ee-af24-e371383c756408³Î´Î 4´Î»Î*$eb1408fd-45f1-41ee-af24-e371383c756408»Î¿Î ¿ÎÒÎ 
+ÒÎÔÎÔÎýÎ 
+ýÎƒÏƒÏ…Ï 
+…Ï†Ï†Ï Ï 
+ Ï£Ï£Ï½Ï 
+½Ï¿Ï¿ÏÝÏ "(511db302b47502f23482eb19738a242f3fb13b1c2)file:///home/weenzox/lit-code/lit-code.py:file:///home/weenzox/lit-code
