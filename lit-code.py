@@ -2214,3 +2214,18 @@
 
 # def pipe_fix(nums):
 #     return list(range(nums[0], nums[-1] + 1))
+
+
+
+#144. Shortest Word
+
+# def find_short(s):
+#     return min(len(word) for word in s.split())
+
+
+
+#145. Find the unique number
+
+# def find_uniq(xs):
+#     a, b = set(xs)
+#     return a if xs.count(a) == 1 else b
