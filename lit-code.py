@@ -2229,3 +2229,23 @@
 # def find_uniq(xs):
 #     a, b = set(xs)
 #     return a if xs.count(a) == 1 else b
+
+
+
+
+
+
+
+#146. Merge two sorted arrays
+
+# def merge_arrays(arr1, arr2):
+#     return sorted(set(arr1 + arr2))
+
+
+
+
+
+#147. Multiplication Table
+
+# def multiplication_table(size):
+#     return [[i * j for j in range(1, size + 1)] for i in range(1, size + 1)]
