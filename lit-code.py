@@ -2249,3 +2249,34 @@
 
 # def multiplication_table(size):
 #     return [[i * j for j in range(1, size + 1)] for i in range(1, size + 1)]
+
+
+
+
+#148. Drink about
+
+# def people_with_age_drink(age):
+#     if age < 14:
+#         drink = "toddy"
+#     elif age < 18:
+#         drink = "coke"
+#     elif age < 21:
+#         drink = "beer"
+#     else:
+#         drink = "whisky"
+#     return f"drink {drink}"
+
+
+
+#149. Is triangle
+
+# def is_triangle(a, b, c):
+#     return a + b > c and a + c > b and b + c > a
+
+
+
+
+#150. Check if array contains value
+
+# def check(seq, elem):
+#     return elem in seq
