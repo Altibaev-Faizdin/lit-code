@@ -2280,3 +2280,19 @@
 
 # def check(seq, elem):
 #     return elem in seq
+
+
+
+
+#151. Sum mixed array
+
+# def sum_mix(arr):
+#     return sum(int(x) for x in arr)
+
+
+
+
+#152. Min Max
+
+# def min_max(lst):
+#     return [min(lst), max(lst)]
