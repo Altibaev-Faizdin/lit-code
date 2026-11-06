@@ -2296,3 +2296,31 @@
 
 # def min_max(lst):
 #     return [min(lst), max(lst)]
+
+
+
+
+
+#153. Choromose Check
+
+# def chromosome_check(chromosome):
+#     return "Congratulations! You're going to have a son." if "Y" in chromosome else "Congratulations! You're going to have a daughter."
+
+
+
+
+
+#154. Get Middle
+
+# def get_middle(s):
+#     return s[len(s) // 2] if len(s) % 2 == 1 else s[len(s) // 2 - 1 : len(s) // 2 + 1]
+
+
+
+
+
+
+#155. Feast
+
+# def feast(beast, dish):
+#     return beast[0] == dish[0] and beast[-1] == dish[-1]
