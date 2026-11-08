@@ -2323,3 +2323,23 @@
 
 # def feast(beast, dish):
 #     return beast[0] == dish[0] and beast[-1] == dish[-1]
+
+
+
+
+
+#156. Sort Numbers
+
+# def solution(nums):
+#     return sorted(nums) if nums else []
+
+
+
+
+
+#157. Factorial
+
+# def factorial(n):
+#     if n < 0 or n > 12:
+#         raise ValueError("Input must be between 0 and 12")
+#     return 1 if n <= 1 else n * factorial(n - 1)
