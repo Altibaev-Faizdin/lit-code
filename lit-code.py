@@ -2343,3 +2343,81 @@
 #     if n < 0 or n > 12:
 #         raise ValueError("Input must be between 0 and 12")
 #     return 1 if n <= 1 else n * factorial(n - 1)
+
+
+
+
+
+
+
+
+#158. Encrypt this!
+
+# def encrypt(text, n):
+#     if not text or n <= 0:
+#         return text
+
+#     for _ in range(n):
+#         text = text[1::2] + text[0::2]
+#     return text
+
+
+# def decrypt(encrypted_text, n):
+#     if not encrypted_text or n <= 0:
+#         return encrypted_text
+
+#     length = len(encrypted_text)
+#     mid = length // 2
+
+#     for _ in range(n):
+#         odds = encrypted_text[:mid]
+#         evens = encrypted_text[mid:]
+        
+
+#         res = []
+#         for i in range(length):
+#             if i % 2 == 0:
+#                 res.append(evens[i // 2])
+#             else:
+#                 res.append(odds[i // 2])
+#         encrypted_text = "".join(res)
+
+#     return encrypted_text
+
+
+
+
+
+
+
+
+
+#159. Expanded Form
+
+# def expanded_form(num):
+#     s = str(num)
+#     return " + ".join(
+#         digit + "0" * (len(s) - i - 1)
+#         for i, digit in enumerate(s)
+#         if digit != "0"
+#     )
+
+
+
+
+
+
+
+
+#160. Check exam
+
+# def check_exam(arr1, arr2):
+#     score = 0
+#     for key, answer in zip(arr1, arr2):
+#         if answer == "":
+#             continue
+#         elif answer == key:
+#             score += 4
+#         else:
+#             score -= 1
+#     return max(0, score)
