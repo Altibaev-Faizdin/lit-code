@@ -2421,3 +2421,27 @@
 #         else:
 #             score -= 1
 #     return max(0, score)
+
+
+
+
+
+
+
+
+#161. Problem
+
+# def problem(a):
+#     if isinstance(a, str):
+#         return "Error"
+#     return a * 50 + 6
+
+
+
+
+
+#162. Beginner - Reduce but Grow
+
+# def better_than_average(class_points, your_points):
+#     return your_points > sum(class_points) / len(class_points)
+    
