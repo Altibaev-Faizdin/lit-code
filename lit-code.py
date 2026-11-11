@@ -2444,4 +2444,29 @@
 
 # def better_than_average(class_points, your_points):
 #     return your_points > sum(class_points) / len(class_points)
+
+
+
+
+
+
+#163. Set Alarm
+
+# def set_alarm(employed, vacation):
+#     return employed and not vacation
+
+
+
+
+#164. Distinct
+
+# def distinct(seq):
+#     return list(dict.fromkeys(seq))
+
+
+
+#165. Twice as old
+
+# def twice_as_old(dad_years_old, son_years_old):
+#     return abs(dad_years_old - son_years_old * 2)
     
