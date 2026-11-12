@@ -2469,4 +2469,29 @@
 
 # def twice_as_old(dad_years_old, son_years_old):
 #     return abs(dad_years_old - son_years_old * 2)
-    
+
+
+
+
+
+
+
+
+#166. Reverse list
+
+# def reverse_list(l):
+#     'return a list with the reverse order of l'
+#     return l[::-1]
+
+
+
+
+#167. Square
+
+# import math
+
+# def is_square(n):
+#     if n < 0:
+#         return False
+#     root = math.isqrt(n)
+#     return root * root == n
