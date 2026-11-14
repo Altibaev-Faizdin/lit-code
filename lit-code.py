@@ -2495,3 +2495,32 @@
 #         return False
 #     root = math.isqrt(n)
 #     return root * root == n
+
+
+
+
+
+#168. Duty Free
+
+# def duty_free(price, discount, holiday_cost):
+#     saving_per_bottle = price * discount / 100
+#     return int(holiday_cost / saving_per_bottle)
+
+
+
+
+
+#169. Capitalize
+
+# def capitalize(s):
+#     even = ''.join(c.upper() if i % 2 == 0 else c for i, c in enumerate(s))
+#     odd = ''.join(c.upper() if i % 2 == 1 else c for i, c in enumerate(s))
+#     return [even, odd]
+
+
+
+
+#170. Name Shuffler
+
+# def name_shuffler(str_):
+#     return ' '.join(reversed(str_.split()))
