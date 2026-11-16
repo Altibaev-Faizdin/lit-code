@@ -2524,3 +2524,28 @@
 
 # def name_shuffler(str_):
 #     return ' '.join(reversed(str_.split()))
+
+
+
+
+
+
+#171. Total amount of points
+
+# la_liga_goals = 43
+# champions_league_goals = 10
+# copa_del_rey_goals = 5
+
+# total_goals = la_liga_goals + champions_league_goals + copa_del_rey_goals
+
+
+
+
+
+#172. Find the average
+
+# def find_average(nums):
+#     if not nums:
+#         return 0
+#     return sum(nums) / len(nums)
+    
