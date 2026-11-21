@@ -2541,7 +2541,6 @@
 
 
 
-
 #172. Find the average
 
 # def find_average(nums):
